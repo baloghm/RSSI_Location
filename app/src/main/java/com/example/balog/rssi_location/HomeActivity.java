@@ -35,7 +35,11 @@ public class HomeActivity extends Activity {
 
                 TextView infoText = new TextView(HomeActivity.this);
                 infoText.setLayoutParams(paramTextView);
-                infoText.setText(new StringBuilder().append("\nUUID: ID of a beacon.").append("\n\nMajor/Minor: 5 Digit identifier for the beacon.").append("\n\nRSSI: Received Signal Strength Indicator.").append("This is used to calculate the distance").toString());
+                infoText.setText(new StringBuilder().append("\nUUID: ID of a beacon.")
+                        .append("\n\nMajor/Minor: 5 Digit identifier for the beacon.")
+                        .append("\n\nRSSI: Received Signal Strength Indicator.")
+                        .append("This is used to calculate the distance")
+                        .toString());
                 textRow.addView(infoText);
                 distanceTable.addView(textRow);
             }
